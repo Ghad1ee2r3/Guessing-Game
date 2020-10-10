@@ -1,7 +1,178 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
 .App {
   text-align: center;
 }
+body {
+  background-image: linear-gradient(135deg, #f5f7fa  0% ,#9ACD32 80%);
+  /* #dbdfca 100%);*/
 
+	/*background-color: yellowgreen;*/
+	display: flex;
+	align-items: center;
+	
+	flex-direction: column;
+
+	min-height: 100vh;
+
+}
+
+.title{
+  width :100%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  text-align: center;
+  color: #000000;
+}
+h1{
+  font-size: 60px;
+  color: transparent;
+  -webkit-text-stroke:1px #61dafb ;
+}
+.ddiv{
+  align-items: center;
+	
+	flex-direction: column;
+
+	min-height: 100vh;
+  justify-content: center;
+}
+.badge {
+  position: fixed;
+  bottom: 0;
+  
+  width:80px;
+  height: 80px;    
+}
+div {
+  display:inline-block;
+}
+li{
+ 
+  padding-left: 10px;
+}
+
+
+
+.my-img {
+  position    : absolute;
+ /*margin-bottom: 0%;*/
+ bottom: 0;
+ right:  0;
+ display: inline;
+  margin-left : -100px; /* half width of img */
+  width: 30%;
+}
+
+.my-imgfirst {
+  position    : absolute;
+ /*margin-bottom: 0%;*/
+ bottom: 0;
+ left:  1%;
+ display: inline;
+  margin-left : -100px; /* half width of img */
+  width: 30%;
+}
+
+.text1{
+  color: #000000;
+  
+  margin-bottom: 20px;
+ margin-top: 50px;
+ 
+  position: relative;
+  animation: text 3s 1;
+
+  width :100%;
+  height: 100%;
+  
+  left:50%;
+  transform: translate(-50%,-50%);
+  
+  text-align: center;
+  color: #ffffff;
+}
+.hint{
+  
+    width: 50px;
+    height: 50px;
+    background-color: #b2bdc3;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: -2s;
+  
+}
+@keyframes example {
+  from {background-color: white;}
+  to {background-color: white;}
+}
+.text3{
+  width :100%;
+  position: relative;
+  font-family: 'Oswald', sans-serif !important;
+  
+  transform: translate(-50%,-50%);
+  left:50%;
+  text-align: center;
+  color: #000000;
+}
+h2{
+  
+  animation: text 3s 1;
+ 
+  
+  
+  transform: translate(-50%,-50%);
+  
+  text-align: center;
+  color: #ffffff;
+}
+@keyframes text{
+  0%{
+    color: black;
+    margin-bottom: -40px;
+  }
+  30%{
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+
+  }
+  85%{
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+.content__container__text{
+  line-height: 40px;
+  margin:0;
+}
+
+.content__container{
+  font-weight: 600;
+  overflow: hidden;
+  height: 40px;
+  padding:0 40px;
+}
+
+
+#oracle {
+ 
+  text-align: center;
+  list-style: none;
+  margin: auto;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
